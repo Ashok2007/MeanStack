@@ -1,0 +1,9 @@
+<div *ngIf="customer">    
+    <div><label>First Name :</label> <input disabled [(ngModel)]="customer.firstName" placeholder="First Name"></div> 
+    <div><label>Last Name :</label> <input  [(ngModel)]="customer.lastName" placeholder="Last Name"></div>
+    <div><label>Account Number :</label> <input [(ngModel)]="customer.accountNumber" placeholder="Account Number"></div> 
+    <div>
+        <button (click)="save()">Save</button>
+        <button (click)="goBack()">Go Back</button>
+    </div> 
+<div>

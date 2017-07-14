@@ -1,0 +1,20 @@
+<div>
+    {{ title }}
+<div>
+     <table border="1">
+        <tr style="background:#87CEFA">
+            <th>Account Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th colspan="2">Actions</th>
+        </tr>
+        <tr *ngFor = "let customer of customerList" style="background:#FAF0E6">
+            <td>{{customer.accountNumber}}</td>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td><button (click)="onUpdate(customer)">Update</button></td>
+            <td><button (click) = "onDelete(customer)">Delete</button></td>
+        </tr>
+    </table>
+</div>
+<div>

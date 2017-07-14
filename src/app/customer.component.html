@@ -1,0 +1,20 @@
+<div>
+    {{ title }}
+     <table border="1">    
+        <tr>
+            <td>Account Number</td><td><input [(ngModel)]="customer.accountNumber" placeholder="Account Number"></td>
+        </tr>
+        <tr>
+            <td>First Name</td><td><input [(ngModel)]="customer.firstName" placeholder="First Name"></td>
+        </tr>
+         <tr>
+            <td>Last Name</td><td><input [(ngModel)]="customer.lastName" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td></td><td> 
+                <button (click)="save()">Save</button>
+                <button (click)="goBack()">Go Back</button>
+            </td>
+        </tr>
+    </table>    
+<div>
